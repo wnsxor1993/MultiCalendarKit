@@ -18,6 +18,7 @@
   "platforms": {
     "ios": "13.0"
   },
+  "swift_versions": "5.7.2",
   "source_files": "MultiCalendarKit/Classes/**/*",
   "dependencies": {
     "RxSwift": [
@@ -38,5 +39,6 @@
     "Then": [
 
     ]
-  }
+  },
+  "swift_version": "5.7.2"
 }

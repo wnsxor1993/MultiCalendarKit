@@ -3543,6 +3543,37 @@
 			};
 			name = Release;
 		};
+		4DBA2815908E9E5321CC4707003350B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED58D6E29D9B4589B42D29B45271AB8 /* MultiCalendarKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MultiCalendarKit/MultiCalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit.modulemap";
+				PRODUCT_MODULE_NAME = MultiCalendarKit;
+				PRODUCT_NAME = MultiCalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		611471902E551B06581225C978423F49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 753CB191549298FCE209B235B96711A2 /* Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.release.xcconfig */;
@@ -3703,6 +3734,38 @@
 			};
 			name = Release;
 		};
+		94682A9FFD71C2953898162AEBF2A633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90BF0B46C7F97FAC8897D2DD95C337F /* MultiCalendarKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MultiCalendarKit/MultiCalendarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit.modulemap";
+				PRODUCT_MODULE_NAME = MultiCalendarKit;
+				PRODUCT_NAME = MultiCalendarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		96E13A96C2FE6FE07A3B788381A9FC1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDD805C14E985D3389EB6FB345C34C92 /* RxDataSources.debug.xcconfig */;
@@ -3727,69 +3790,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A8CB4113320672F5EAEC453E3427722F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D90BF0B46C7F97FAC8897D2DD95C337F /* MultiCalendarKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MultiCalendarKit/MultiCalendarKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit.modulemap";
-				PRODUCT_MODULE_NAME = MultiCalendarKit;
-				PRODUCT_NAME = MultiCalendarKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BB062C5F6194641A055E4F91CBF2515F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ED58D6E29D9B4589B42D29B45271AB8 /* MultiCalendarKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MultiCalendarKit/MultiCalendarKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MultiCalendarKit/MultiCalendarKit.modulemap";
-				PRODUCT_MODULE_NAME = MultiCalendarKit;
-				PRODUCT_NAME = MultiCalendarKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -4053,8 +4053,8 @@
 		0772D937A75679BF9D0ADB5A15E382C7 /* Build configuration list for PBXNativeTarget "MultiCalendarKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB062C5F6194641A055E4F91CBF2515F /* Debug */,
-				A8CB4113320672F5EAEC453E3427722F /* Release */,
+				4DBA2815908E9E5321CC4707003350B5 /* Debug */,
+				94682A9FFD71C2953898162AEBF2A633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
