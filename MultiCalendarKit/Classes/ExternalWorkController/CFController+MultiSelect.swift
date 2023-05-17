@@ -91,11 +91,11 @@ extension CFController {
             centerViews.append(endView)
             
             guard self.selectedViews[startMonth] == nil else {
-                self.selectedViews[startMonth] = centerViews
+                self.selectedViews[startMonth]?.append(contentsOf: centerViews)
                 return
             }
             
-            self.selectedViews[startMonth]?.append(contentsOf: centerViews)
+            self.selectedViews[startMonth] = centerViews
             
             return
         }
@@ -111,11 +111,11 @@ extension CFController {
             afterStartViews.insert(startView, at: 0)
             
             guard self.selectedViews[startMonth] == nil else {
-                self.selectedViews[startMonth] = afterStartViews
+                self.selectedViews[startMonth]?.append(contentsOf: afterStartViews)
                 return
             }
             
-            self.selectedViews[startMonth]?.append(contentsOf: afterStartViews)
+            self.selectedViews[startMonth] = afterStartViews
             
             return
         }
@@ -131,11 +131,11 @@ extension CFController {
             beforeEndViews.append(endView)
             
             guard self.selectedViews[endMonth] == nil else {
-                self.selectedViews[endMonth] = beforeEndViews
+                self.selectedViews[endMonth]?.append(contentsOf: beforeEndViews)
                 return
             }
             
-            self.selectedViews[endMonth]?.append(contentsOf: beforeEndViews)
+            self.selectedViews[endMonth] = beforeEndViews
             
             return
         }
@@ -150,11 +150,11 @@ extension CFController {
             }
             
             guard self.selectedViews[moveCellRow] == nil else {
-                self.selectedViews[moveCellRow] = centerViews
+                self.selectedViews[moveCellRow]?.append(contentsOf: centerViews)
                 return
             }
             
-            self.selectedViews[moveCellRow]?.append(contentsOf: centerViews)
+            self.selectedViews[moveCellRow] = centerViews
         }
     }
 }
