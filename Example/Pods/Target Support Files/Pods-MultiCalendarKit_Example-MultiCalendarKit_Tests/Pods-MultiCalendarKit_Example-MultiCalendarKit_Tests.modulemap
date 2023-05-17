@@ -1,0 +1,6 @@
+framework module Pods_MultiCalendarKit_Example_MultiCalendarKit_Tests {
+  umbrella header "Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

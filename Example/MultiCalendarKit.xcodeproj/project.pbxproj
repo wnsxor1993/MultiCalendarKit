@@ -13,8 +13,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7224CFE727CA75E59D6E8CFF /* Pods_MultiCalendarKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342EC152252181A2FA2A1E5E /* Pods_MultiCalendarKit_Tests.framework */; };
 		8B7852044D3089788C79DE22 /* Pods_MultiCalendarKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E0C2B8A3642C7DCFBBDCB4 /* Pods_MultiCalendarKit_Example.framework */; };
+		C19B3F0D724514BDFCF6CC3C /* Pods_MultiCalendarKit_Example_MultiCalendarKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A667A7F35AE46E06032A5279 /* Pods_MultiCalendarKit_Example_MultiCalendarKit_Tests.framework */; };
+		D21AF3562A14C35F00371181 /* RxSwift +.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AF3552A14C35F00371181 /* RxSwift +.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03584F9A181FE7113A626BA4 /* Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2A66E9EF8131B86914EA3F4B /* Pods-MultiCalendarKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiCalendarKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-MultiCalendarKit_Tests/Pods-MultiCalendarKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		342EC152252181A2FA2A1E5E /* Pods_MultiCalendarKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiCalendarKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E0C2B8A3642C7DCFBBDCB4 /* Pods_MultiCalendarKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiCalendarKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8BEBC390B5828FF6DA759A /* Pods-MultiCalendarKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiCalendarKit_Example.release.xcconfig"; path = "Target Support Files/Pods-MultiCalendarKit_Example/Pods-MultiCalendarKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5BD4F58FC11A88EE445104C8 /* Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MultiCalendarKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCalendarKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +45,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60FA2CFC670E516B5128231E /* Pods-MultiCalendarKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiCalendarKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-MultiCalendarKit_Example/Pods-MultiCalendarKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		78782FB73D4572988FB6C61B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		81D7B878270AE175EBF8EB4D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		78782FB73D4572988FB6C61B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		81D7B878270AE175EBF8EB4D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8C285B3909FF24FB87F6E016 /* Pods-MultiCalendarKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiCalendarKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MultiCalendarKit_Tests/Pods-MultiCalendarKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E8B8478560BB7FF8CA97CE7D /* MultiCalendarKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MultiCalendarKit.podspec; path = ../MultiCalendarKit.podspec; sourceTree = "<group>"; };
+		A667A7F35AE46E06032A5279 /* Pods_MultiCalendarKit_Example_MultiCalendarKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiCalendarKit_Example_MultiCalendarKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21AF3552A14C35F00371181 /* RxSwift +.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxSwift +.swift"; sourceTree = "<group>"; };
+		E8B8478560BB7FF8CA97CE7D /* MultiCalendarKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MultiCalendarKit.podspec; path = ../MultiCalendarKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7224CFE727CA75E59D6E8CFF /* Pods_MultiCalendarKit_Tests.framework in Frameworks */,
+				C19B3F0D724514BDFCF6CC3C /* Pods_MultiCalendarKit_Example_MultiCalendarKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +97,7 @@
 		607FACD21AFB9204008FA782 /* Example for MultiCalendarKit */ = {
 			isa = PBXGroup;
 			children = (
+				D21AF3542A14C35F00371181 /* Extension */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -143,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				47E0C2B8A3642C7DCFBBDCB4 /* Pods_MultiCalendarKit_Example.framework */,
-				342EC152252181A2FA2A1E5E /* Pods_MultiCalendarKit_Tests.framework */,
+				A667A7F35AE46E06032A5279 /* Pods_MultiCalendarKit_Example_MultiCalendarKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,9 +160,18 @@
 				4F8BEBC390B5828FF6DA759A /* Pods-MultiCalendarKit_Example.release.xcconfig */,
 				8C285B3909FF24FB87F6E016 /* Pods-MultiCalendarKit_Tests.debug.xcconfig */,
 				2A66E9EF8131B86914EA3F4B /* Pods-MultiCalendarKit_Tests.release.xcconfig */,
+				5BD4F58FC11A88EE445104C8 /* Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.debug.xcconfig */,
+				03584F9A181FE7113A626BA4 /* Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D21AF3542A14C35F00371181 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D21AF3552A14C35F00371181 /* RxSwift +.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +204,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				15E04DCB62B5AB38F7BD4306 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +242,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +278,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15E04DCB62B5AB38F7BD4306 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/MultiCalendarKit/MultiCalendarKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiCalendarKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2142EB579CA8B29738B3467D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,11 +319,27 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MultiCalendarKit_Example/Pods-MultiCalendarKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/MultiCalendarKit/MultiCalendarKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiCalendarKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -295,7 +361,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MultiCalendarKit_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,6 +399,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D21AF3562A14C35F00371181 /* RxSwift +.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiCalendarKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiCalendarKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -505,7 +574,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C285B3909FF24FB87F6E016 /* Pods-MultiCalendarKit_Tests.debug.xcconfig */;
+			baseConfigurationReference = 5BD4F58FC11A88EE445104C8 /* Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -516,6 +585,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,13 +597,14 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A66E9EF8131B86914EA3F4B /* Pods-MultiCalendarKit_Tests.release.xcconfig */;
+			baseConfigurationReference = 03584F9A181FE7113A626BA4 /* Pods-MultiCalendarKit_Example-MultiCalendarKit_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

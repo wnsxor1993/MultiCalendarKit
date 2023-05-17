@@ -6,7 +6,17 @@ target 'MultiCalendarKit_Example' do
   pod 'MultiCalendarKit', :path => '../'
 
   target 'MultiCalendarKit_Tests' do
-    inherit! :search_paths
+  # RxSwift
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
+  pod 'RxGesture'
+  pod 'RxDataSources', '~> 5.0'
+
+  # SnapKit
+  pod 'SnapKit', '~> 5.6.0'
+
+  # Then
+  pod 'Then'
 
     
   end

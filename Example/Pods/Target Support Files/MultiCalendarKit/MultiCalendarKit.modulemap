@@ -1,0 +1,6 @@
+framework module MultiCalendarKit {
+  umbrella header "MultiCalendarKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
