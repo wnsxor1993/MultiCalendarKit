@@ -11,6 +11,11 @@ import RxRelay
 @available(iOS 13, *)
 public class MultiSelectCellManager {
     
+    public enum SelectOption {
+        case multi
+        case single
+    }
+    
     private(set) var startMonthIndex: Int?
     private(set) var endMonthIndex: Int?
     private(set) var startDayIndex: (Int, Int)?
@@ -43,10 +48,22 @@ public class MultiSelectCellManager {
      */
     let tappedCellDTORelay: PublishRelay<SelectCellDayDTO> = .init()
     
+    private var selectOption: SelectOption = .multi
+    
     /**
         MultiSelectManager 객체 생성 이니셜라이저
      */
     public init() { }
+    
+    /**
+        멀티 캘린더의 옵션 설정
+     
+        - parameters:
+            - with: 기본인 Multi로도 가능하고, Single 옵션도 설정 가능
+     */
+    public func setSelectOption(with option: SelectOption) {
+        self.selectOption = option
+    }
     
     /**
         탭한 CellDay의 날짜 타입을 전달
@@ -63,6 +80,12 @@ public class MultiSelectCellManager {
 private extension MultiSelectCellManager {
     
     func checkWhatSortSelected(with dayDTO: SelectCellDayDTO , dayIndex: (Int, Int), monthIndex: Int) {
+        guard self.selectOption == .multi else {
+            self.configureBasicDate(with: dayDTO, dayIndex: dayIndex, monthIndex: monthIndex)
+            
+            return
+        }
+        
         guard let startDay, endDay != nil else {
             self.configureBasicDate(with: dayDTO, dayIndex: dayIndex, monthIndex: monthIndex)
             

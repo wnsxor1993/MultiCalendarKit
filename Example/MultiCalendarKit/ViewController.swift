@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .white
         self.configureLayouts()
         self.bindWithCellManager()
+        self.cellManager.setSelectOption(with: .multi)
     }
     
     override func viewWillAppear(_ animated: Bool) {

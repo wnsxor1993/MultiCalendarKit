@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiCalendarKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Multi Calendar Kit is a toolkit that allows you to use multiple calendars simultaneously.'
 
 # This description is used to generate tags and improve search results.
