@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiCalendarKit'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Multi Calendar Kit is a toolkit that allows you to use multiple calendars simultaneously.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
-  s.swift_version = '5.7.2'
+  s.swift_version = '5.8'
 
   s.source_files = 'MultiCalendarKit/Classes/**/*'
 

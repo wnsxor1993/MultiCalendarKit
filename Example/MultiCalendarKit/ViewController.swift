@@ -16,6 +16,12 @@ import MultiCalendarKit
 
 class ViewController: UIViewController {
     
+    private let resetButton: UIButton = .init().then {
+        $0.setTitle("리셋", for: .normal)
+        $0.titleLabel?.textColor = .white
+        $0.backgroundColor = .blue
+    }
+    
     private let disposeBag: DisposeBag = .init()
     private let cellManager: MultiSelectCellManager = .init()
     private lazy var cfController: CFController = .init(with: .multiSelectType(self.cellManager), viewWillAppear: self.rx.viewWillAppear.asDriver(onErrorJustReturn: false), viewWillDisappear: self.rx.viewWillDisappear.asDriver(onErrorJustReturn: false))
@@ -42,11 +48,18 @@ private extension ViewController {
     
     func configureLayouts() {
         self.view.addSubview(cfController.calendarView)
+        self.view.addSubview(resetButton)
         
         cfController.calendarView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
             make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
-            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+            make.bottom.equalToSuperview().inset(80)
+        }
+        
+        resetButton.snp.makeConstraints {
+            $0.width.height.equalTo(50)
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(15)
         }
     }
     
@@ -64,6 +77,13 @@ private extension ViewController {
                 guard let date = result.element else { return }
                 
                 print("End: \(date)")
+            }
+            .disposed(by: disposeBag)
+        
+        self.resetButton.rx.tap
+            .asDriver()
+            .drive(with: self) { (owner, _) in
+                owner.cfController.resetAll()
             }
             .disposed(by: disposeBag)
     }

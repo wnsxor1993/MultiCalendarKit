@@ -11,6 +11,18 @@ import RxCocoa
 
 extension CFController {
     
+    // 모든 선택 요소 초기화
+    public func resetAll() {
+        switch self.calendarType {
+        case .inputType(_):
+            break
+            
+        case .multiSelectType(let manager):
+            manager.resetAllData()
+            self.resetAllTouched()
+        }
+    }
+    
     // Cell 생성 메서드
     func createMultipleCell(with collectionView: UICollectionView, indexPath: IndexPath, item: CalendarSectionModel.Item) -> CalendarMultiSelectCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CalendarMultiSelectCell.identifier, for: indexPath) as? CalendarMultiSelectCell else { return .init() }
@@ -156,6 +168,18 @@ extension CFController {
             
             self.selectedViews[moveCellRow] = centerViews
         }
+    }
+    
+    func resetAllTouched() {
+        let cellRows: [Int] = selectedViews.map { return $0.key }
+        
+        cellRows.forEach {
+            guard let cell = self.calendarView.calendarCollectionView.cellForItem(at: .init(row: $0, section: 0)) as? CalendarMultiSelectCell, let selectedViews: [MultiSelectCellDayView] = self.selectedViews[$0] else { return }
+            
+            cell.resetAllDayViews(with: selectedViews)
+        }
+        
+        self.selectedViews.removeAll()
     }
 }
 

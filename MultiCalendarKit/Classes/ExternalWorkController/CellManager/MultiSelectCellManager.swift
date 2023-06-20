@@ -66,6 +66,18 @@ public class MultiSelectCellManager {
     }
     
     /**
+        이전에 선택된 모든 요소 초기화
+     */
+    func resetAllData() {
+        self.startMonthIndex = nil
+        self.endMonthIndex = nil
+        self.startDayIndex = nil
+        self.endDayIndex = nil
+        self.startDay = nil
+        self.endDay = nil
+    }
+    
+    /**
         탭한 CellDay의 날짜 타입을 전달
      
         - parameters:
