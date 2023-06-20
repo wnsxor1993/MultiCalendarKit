@@ -1,7 +1,7 @@
 # MultiCalendarKit
 
-[![Swift](https://img.shields.io/badge/swift-v5.7.2-orange?logo=swift)](https://developer.apple.com/kr/swift/)
-[![Xcode](https://img.shields.io/badge/xcode-v14.2-blue?logo=xcode)](https://developer.apple.com/kr/xcode/)
+[![Swift](https://img.shields.io/badge/swift-v5.8-orange?logo=swift)](https://developer.apple.com/kr/swift/)
+[![Xcode](https://img.shields.io/badge/xcode-v14.3-blue?logo=xcode)](https://developer.apple.com/kr/xcode/)
 [![RxSwift](https://img.shields.io/badge/RxSwift-6.5.0-red)]()
 [![SnapKit](https://img.shields.io/badge/SnapKit-5.6.0-red)]()
 
