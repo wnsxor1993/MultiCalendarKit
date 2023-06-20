@@ -123,7 +123,8 @@ private extension CFController {
     
     func configureBinding(with viewWillAppear: Driver<Bool>, viewWillDisappear: Driver<Bool>) {
         viewWillAppear.drive { [weak self] isAppear in
-            guard let self, isAppear else { return }
+            // Tabbar와 같이 해당 드라이브의 값이 항상 false로 떨어질 수 있는 경우도 있음
+            guard let self, (isAppear || !(self.isAppearedView)) else { return }
             
             switch self.calendarType {
             case .inputType(let inputManager):
@@ -138,12 +139,13 @@ private extension CFController {
                 self.sectionModelRelay.accept([section])
             }
             
-            self.isAppearedView = isAppear
+            self.isAppearedView = true
         }
         .disposed(by: disposeBag)
         
-        viewWillDisappear.drive { [weak self] isDisapear in
-            guard let self, isDisapear else { return }
+        viewWillDisappear.drive { [weak self] isDisappear in
+            // Tabbar와 같이 해당 드라이브의 값이 항상 false로 떨어질 수 있는 경우도 있음
+            guard let self, (isDisappear || self.isAppearedView) else { return }
             
             self.isAppearedView = false
         }
